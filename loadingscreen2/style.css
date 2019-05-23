@@ -1,0 +1,150 @@
+body
+{
+	background-image: url('https://media.discordapp.net/attachments/485427591600144385/580371288842043442/baggrund.jpg?width=1980&height=1280');
+    background-size: cover;
+    background-position: center;
+}
+.music-info {
+    width: 99%;
+    height: 3.7%;
+    border-radius: 344px;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: "Impact", sans-serif;
+}
+.centered{
+	width:400px;
+	height:00px;
+	position:absolute;
+	top:71%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1,.blob-2{
+	width:70px;
+	height:70px;
+	position:absolute;
+	background:#FFA500;
+	border-radius:50%;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1{
+	left:20%;
+	animation:osc-l 2.5s ease infinite;
+}
+.blob-2{
+	left:80%;
+	animation:osc-r 2.5s ease infinite;
+	background:#FFA500;
+}
+@keyframes osc-l{
+	0%{left:20%;}
+	50%{left:50%;}
+	100%{left:20%;}
+}
+@keyframes osc-r{
+	0%{left:80%;}
+	50%{left:50%;}
+	100%{left:80%;}
+}
+
+.text {
+    font-family: fantasy;
+    z-index: 9999px;
+    font-size: 30px;
+	color:#FFA500;
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    margin-top: 740px;
+    margin-left: 885px;   
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  
+  .stroke-still {
+    stroke: #232323;
+  }
+  
+  .stroke-animation {
+    -webkit-animation: stroke-spacing 2.8s ease-in, stroke-color 2.8s linear;
+            animation: stroke-spacing 2.8s ease-in, stroke-color 2.8s linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  
+  @-webkit-keyframes stroke-spacing {
+    0% {
+      stroke-dasharray: 0 200;
+    }
+    45% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 200 200;
+    }
+    90% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+  }
+  
+  @keyframes stroke-spacing {
+    0% {
+      stroke-dasharray: 0 200;
+    }
+    45% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 200 200;
+    }
+    90% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      stroke-dasharray: 200 200;
+    }
+  }
+  
+  @-webkit-keyframes stroke-color {
+    0%  { stroke: #FFA500; }
+    24% { stroke: #FFA500; }
+    25% { stroke: #FFA500; }
+    49% { stroke: #FFA500; }
+    50% { stroke: #FFA500; }
+    74% { stroke: #FFA500; }
+    75% { stroke: #FFA500; }
+    99% { stroke: #FFA500; }
+  }
+  
+  @keyframes stroke-color {
+    0%  { stroke: #FFA500; }
+    24% { stroke: #FFA500; }
+    25% { stroke: #FFA500; }
+    49% { stroke: #FFA500; }
+    50% { stroke: #FFA500; }
+    74% { stroke: #FFA500; }
+    75% { stroke: #FFA500; }
+    99% { stroke: #FFA500; }
+  }

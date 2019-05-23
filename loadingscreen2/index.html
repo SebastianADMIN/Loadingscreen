@@ -1,0 +1,46 @@
+
+<html>
+        <head>
+                <meta charset="DTF-8">
+                <title>uSeb</title>
+                <link rel="stylesheet" type="text/css" href="style.css">  
+            </head>
+            <body>
+                   <h4 class="text">Connecter</h4>
+            </body>
+            <div class = "centered">
+                <div class = "blob-1"></div>
+                <div class = "blob-2"></div>
+            </div>
+<svg width="200" height="200" viewBox="0 0 100 100">
+    <polyline class="line-cornered stroke-still" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+    <polyline class="line-cornered stroke-still" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+    <polyline class="line-cornered stroke-animation" points="0,0 100,0 100,100" stroke-width="10" fill="none"></polyline>
+    <polyline class="line-cornered stroke-animation" points="0,0 0,100 100,100" stroke-width="10" fill="none"></polyline>
+  </svg>
+  <audio id="loading-music" autoplay>
+        <source src="Loading.ogg" type="audio/ogg">
+    </audio>
+    <div class="music-info">
+        <span style="display: block; text-align: center;">Musik: P</span>
+        <span style="display: block; text-align: center;">Lydstyrke: +/-</span>
+    </div>
+    <script type="text/javascript">
+        var music = document.getElementById("loading-music");
+        music.volume = 0.1;
+        document.addEventListener('keypress', (event) => {
+            if(event.key == "p") {
+                if(music.paused) {
+                    music.play();
+                }else{
+                    music.pause();
+                }
+            }else if(event.key == "-") {
+                music.volume = music.volume-0.05;
+            }else if(event.key == "+") {
+                music.volume = music.volume+0.05;
+            }
+        });
+    </script>
+    <script type="text/javascript">    
+</html>
